@@ -34,8 +34,8 @@ git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 
 # github profile
-git config --global user.email "sunsense9@naver.com"
-git config --global user.name "Sunwoo Yoo"
+git config --global user.email "sunsense9@gmail.com"
+git config --global user.name "Sunwoo Yu"
 
 # miniconda
 mkdir -p ~/miniconda3
