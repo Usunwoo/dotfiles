@@ -37,8 +37,8 @@ ln -s -f .tmux/.tmux.conf
 git config --global user.email "sunsense9@gmail.com"
 git config --global user.name "Sunwoo Yu"
 
-# miniconda
-mkdir -p ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-rm ~/miniconda3/miniconda.sh
+# # miniconda
+# mkdir -p ~/miniconda3
+# wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+# bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+# rm ~/miniconda3/miniconda.sh
