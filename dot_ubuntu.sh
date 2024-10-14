@@ -1,8 +1,9 @@
 # basic
 apt install sudo
 sudo apt update
-sudo apt -y upgrade
-sudo apt -y install curl tmux tree
+# sudo apt -y upgrade
+sudo apt -y install vim curl pip wget tmux tree
+sudo apt -y autoremove
 
 pip3 install -U pip
 pip3 install -U nvitop
@@ -21,8 +22,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # spaceship theme
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+if [ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt ]; then
+    git clone https://github.com/denysdovhan/spaceship-prompt.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt --depth=1
+fi
+ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
 
 # copy .zshrc
 cp -rf zshrc/ubuntu ~/.zshrc
@@ -37,8 +40,8 @@ ln -s -f .tmux/.tmux.conf
 git config --global user.email "sunsense9@gmail.com"
 git config --global user.name "Sunwoo Yu"
 
-# # miniconda
-# mkdir -p ~/miniconda3
-# wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-# bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-# rm ~/miniconda3/miniconda.sh
+# vscode as git commit editor
+git config --global core.editor "code --wait"
+
+# miniconda
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
