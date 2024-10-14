@@ -43,5 +43,8 @@ git config --global user.name "Sunwoo Yu"
 # vscode as git commit editor
 git config --global core.editor "code --wait"
 
+# github lg alias
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 # miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
