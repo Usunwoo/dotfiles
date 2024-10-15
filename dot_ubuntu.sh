@@ -38,7 +38,7 @@ ln -s -f .tmux/.tmux.conf
 
 # github profile
 git config --global user.email "sunsense9@gmail.com"
-git config --global user.name "Sunwoo Yu"
+git config --global user.name "Usunwoo"
 
 # vscode as git commit editor
 git config --global core.editor "code --wait"
