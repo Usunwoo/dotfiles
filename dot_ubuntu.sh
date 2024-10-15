@@ -1,5 +1,5 @@
 # basic
-apt install sudo
+# apt install sudo
 sudo apt update
 # sudo apt -y upgrade
 sudo apt -y install vim curl pip wget tmux tree
